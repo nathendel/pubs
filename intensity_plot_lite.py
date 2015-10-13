@@ -1,49 +1,18 @@
-# import sys
-# import os
-
-# import pandas
 
 import numpy as np
 import matplotlib.pyplot as plt
 
-
-
-# for peptide in exampledata:
-#	peptides = peptide.split('	')
-#	pep_list.append(x_axis)
-
 intensity_ctrl = [20, 35, 30, 35, 27]
-# std_men = (2, 3, 4, 1, 2)
+# std_intensity_ctrl = (2, 3, 4, 1, 2)
 
 intensity_phos = [25, 32, 34, 20, 25]
-# std_women = (3, 5, 2, 3, 3)
+# std_intensity_phos = (3, 5, 2, 3, 3)
 
 intensity_diff = [x - y for x, y in zip(intensity_ctrl, intensity_phos)]
-
+# std_intensity_diff = ()
 # intensity_diff = [intensity_ctrl[i] - intensity_phos[i] for i in range(len(intensity_ctrl))]
 
 x_axis = []
-# for peptide in exampledata:
-#	peptides = peptide[0]
-#	pep_list.append(x_axis)
-
-# def xor(intensity_ctrl, intensity_phos):	
-#	intensity_diff = []
-#	intensity_sum = intensity_ctrl + intensity_phos
-#	for i in range(0, len(intensity_sum)):
-#		if ((intensity_sum[i] not in intensity_ctrl) or (intensity_sum[i] not in intensity_phos) and (intensity_sum[i]) not in intensity_diff):
-#			intensity_diff[len(intensity_diff):] = [intensity_sum[i]]
-#	return intensity_diff
-
-
-		# x = intensity_diff[i]
-		# y = i
-		# while y > 0 and x < intensity_diff[y-1]:
-		#	intensity_diff[y] = intensity_diff[y-1]
-
-
-
-
 
 n_groups = 5
 
